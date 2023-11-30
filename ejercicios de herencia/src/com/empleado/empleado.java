@@ -5,15 +5,22 @@ public class empleado extends persona{
     String dni;
     int sueldo;
 
-    public empleado(String dni, int sueldo) {
-        this.dni = dni;
-        this.sueldo = sueldo;
+    String puesto;
+    String departamento;
+
+    //agregar al metodo constructor los atributos creados
+
+
+    public empleado() {
+
     }
 
-    public empleado(String nombre, int edad, int telefono, String dni, int sueldo) {
+    public empleado(String nombre, int edad, int telefono, String dni, int sueldo, String puesto, String departamento) {
         super(nombre, edad, telefono);
         this.dni = dni;
         this.sueldo = sueldo;
+        this.puesto = puesto;
+        this.departamento = departamento;
     }
 
     public String getDni() {
@@ -32,8 +39,8 @@ public class empleado extends persona{
         this.sueldo = sueldo;
     }
 
-@Override
-    public String toString2() {
+
+    public String toStringempleado() {
         return "empleado{" +
                 "dni='" + dni + '\'' +
                 ", sueldo=" + sueldo +

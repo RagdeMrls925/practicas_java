@@ -39,7 +39,7 @@ public class persona {
     }
 
 
-    public String toString2() {
+    public String toStringpersona() {
         return "persona{" +
                 "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
